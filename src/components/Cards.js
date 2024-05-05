@@ -8,7 +8,11 @@ export default class Cards extends Component{
     render(){
         return(
          <View style={{
-            ...styles.container, 
+            height:200,
+            width:170,
+            borderRadius:30,
+            padding:15,
+            marginLeft:20, 
             backgroundColor:this.props.bg
          }}>
             <View style={styles.col}>
@@ -28,7 +32,8 @@ export default class Cards extends Component{
             </View>
              <Text style={styles.title}>{this.props.title}</Text>
             <Text style={{
-                ...styles.number,
+                fontWeight:'bold',
+                fontSize:22,
                 color: this.props.bg == "red" ? "#FFF":"#000",
             }}>
                 {this.props.number}
@@ -41,7 +46,7 @@ export default class Cards extends Component{
 const styles = StyleSheet.create({
   container:{
     height:200,
-    width:130,
+    width:300,
     borderRadius:30,
     padding:15,
     marginLeft:20

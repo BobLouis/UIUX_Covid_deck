@@ -59,7 +59,7 @@ export default class Home extends Component {
 
 renderNoMoreCards(){
     return(
-        <View title="All Domne!">
+        <View title="All Done!">
             <Text style={styles.noCard}>NO MORE CARDS HERE</Text>
             <Button backgroundColor="#03A9F4" title="Get more!"/>
         </View>
